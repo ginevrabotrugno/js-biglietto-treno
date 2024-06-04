@@ -18,12 +18,25 @@ let prezzoBiglietto = chilometriViaggio * 0.21;
 
 console.log("prezzo biglietto: €", prezzoBiglietto);
 
+if (etaPasseggero < 18) { // va applicato uno sconto del 20% per gli under 18
+
+    let sconto = (prezzoBiglietto * 0.2);
+
+    let prezzoFinale = prezzoBiglietto - sconto;
+
+    console.log("prezzo biglietto: €", prezzoFinale);
+
+} else if ( etaPasseggero > 65) { // va applicato uno sconto del 40% per gli over 65
+
+    let sconto = (prezzoBiglietto * 0.4);
+
+    let prezzoFinale = prezzoBiglietto - sconto;
+
+    console.log("prezzo biglietto: €", prezzoFinale);
+}
 
 
-// va applicato uno sconto del 20% per gli under 18
 
-
-// va applicato uno sconto del 40% per gli over 65
 
 
 

@@ -16,23 +16,27 @@ console.log("età passeggero: ", etaPasseggero);
 
 let prezzoBiglietto = chilometriViaggio * 0.21;
 
-console.log("prezzo biglietto: €", prezzoBiglietto);
+console.log("prezzo biglietto: €", prezzoBiglietto.toFixed(2));
 
 if (etaPasseggero < 18) { // va applicato uno sconto del 20% per gli under 18
 
     let sconto = (prezzoBiglietto * 0.2);
 
+    console.log("sconto: -€", sconto.toFixed(2));
+
     let prezzoFinale = prezzoBiglietto - sconto;
 
-    console.log("prezzo biglietto: €", prezzoFinale);
+    console.log("prezzo intero: €", prezzoFinale.toFixed(2));
 
 } else if ( etaPasseggero > 65) { // va applicato uno sconto del 40% per gli over 65
 
     let sconto = (prezzoBiglietto * 0.4);
 
+    console.log("sconto: -€", sconto.toFixed(2));
+
     let prezzoFinale = prezzoBiglietto - sconto;
 
-    console.log("prezzo biglietto: €", prezzoFinale);
+    console.log("prezzo finale: €", prezzoFinale.toFixed(2));
 }
 
 
